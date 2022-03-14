@@ -51,9 +51,9 @@ function main()
     initViewport(gl, canvas);
     initGL(canvas);
     
-    let octahedron = createOctahedron(gl, [-4, -2, -3], [0, 1, 0]);
-    let dodecahedron = createDodecahedron(gl, [0, 0, -2], [-0.4, 1.0, 0.1]);
-    let scutoid = createScutoid(gl, [4.5, -1, -8], [1.0, 1.0, 0.2]);
+    let octahedron = createOctahedron(gl, [4.5, -2, -3], [0, 1, 0]);
+    let dodecahedron = createDodecahedron(gl, [0.8, 0, -2], [-0.4, 1.0, 0.1]);
+    let scutoid = createScutoid(gl, [-7, -1, -8], [1.0, 1.0, 0.2]);
     const shaderProgram = shaderUtils.initShader(gl, vertexShaderSource, fragmentShaderSource);
     bindShaderAttributes(gl, shaderProgram);
 
