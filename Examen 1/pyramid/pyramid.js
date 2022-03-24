@@ -321,7 +321,7 @@ function main()
 //la inzquierda, derecha y arriba,cada vértice tiene 3 elementos su "x", "y" y su "z" 
 function drawSierpinsky(max, step, verts, left, right, top){
 
-    //El caso base es dibujar cada triangulo
+    //El caso base es dibujar un triangulo
     if(step == max){
         verts.push(left[0], left[1], left[2])
         verts.push(right[0], right[1], right[2])
