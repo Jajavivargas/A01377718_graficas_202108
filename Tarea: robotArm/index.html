@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        <link rel="stylesheet" href="../3. Sierpinsky/styles.css">
+		<title>Three.js Robot Arm</title>
+		<script type="module" defer src="index.js"></script>
+
+	</head>
+	<body> 
+
+        <!-- HTML doc para esta tarea, incluye 8 sliders que sirven para rotar 7 partes del cuerpo y mover 
+        la escala con la que el brazo completo se visualiza
+    
+        Cada slider corresponde a cierto movimiento, los valores mínimos y máximos fueron definidos por mi en un 
+        intento de asimilar la naturaleza de un brazo humano-->
+		<div id="container">
+            <h1 class="display-4">Three JS Robot ARM</h1>
+            <div class="lol">
+                <canvas id="webglcanvas" width=800 height=600></canvas>
+            </div>
+		</div>
+        <div class="row">
+            <div class="col">
+                <p>Shoulder x</p>
+                <div id="shoulderSliderX" class="slidecontainer m-3">
+                    <input type="range" min="3" max="7" value="0" step="0.1" class="slider" id="myRange">
+                </div>
+            </div>
+            <div class="col">
+                <div id="shoulderSliderZ" class="slidecontainer m-3">
+                    <p>Shoulder z</p>
+                    <input type="range" min="4.5" max="6" value="0" step="0.1" class="slider" id="myRange">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Forearm y</p>
+                <div id="forearmSlider" class="slidecontainer m-3">
+                    <input type="range" min="0" max="2" value="0" step="0.1" class="slider" id="myRange">
+                </div>
+            </div>
+            <div class="col">
+                <p>Elbow x</p>
+                <div id="elbowSlider" class="slidecontainer m-3">
+                    <input type="range" min="4.7" max="7.5" value="4" step="0.1" class="slider" id="myRange">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Wrist x</p>
+                <div id="wristSlider" class="slidecontainer m-3">
+                    <input type="range" min="6" max="7.5" value="0" step="0.1" class="slider" id="myRange">
+                </div>
+            </div>
+            <div class="col">
+                <p>Hand x</p>
+                <div id="handSliderX" class="slidecontainer m-3">
+                    <input type="range" min="2.8" max="3.5" value="0" step="0.1" class="slider" id="myRange">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Hand z</p>
+                <div id="handSliderZ" class="slidecontainer m-3">
+                    <input type="range" min="5" max="7.5" value="0" step="0.1" class="slider" id="myRange">
+                </div>
+            </div>
+            <div class="col">
+                <p>Scale</p>
+                <div id="scaleSlider" class="slidecontainer m-3">
+                    <input type="range" min="1" max="3" value="0" class="slider" id="myRange">
+                </div>
+            </div>
+        </div>
+	</body>
+</html>

@@ -12,6 +12,17 @@ body{
     text-align: center;
 }
 
+h1{
+  text-align: center;
+}
+
+.lol{
+  text-align: center;
+}
+
+#elbowSlider{
+  direction:ltr;
+}
 .slider{
     -webkit-appearance: none;
   width: 100%;
@@ -29,7 +40,7 @@ body{
     width: 25px;
     height: 25px;
     border-radius: 50%; 
-    background: #04AA6D;
+    background: #3D86BF;
     cursor: pointer;
   }
   
@@ -37,6 +48,6 @@ body{
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: #04AA6D;
+    background: #3D86BF;
     cursor: pointer;
   }
